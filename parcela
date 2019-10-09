@@ -1,0 +1,6 @@
+<?php
+
+$datas = new DatePeriod(new DateTime('2015-01-30'), new DateInterval('P1M'), 5);
+        foreach ($datas as $data) {
+            echo $data->format('d/m/Y'), "\n";
+        }
